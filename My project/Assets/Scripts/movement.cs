@@ -10,7 +10,7 @@ public class movement : MonoBehaviour
 
     private Rigidbody rb;
 
-    public float forceAmount = 60;
+    public float forceAmount = 100;
 
     private void Awake()
     {
@@ -54,6 +54,6 @@ public class movement : MonoBehaviour
             rb.AddForce((Vector3.right * forceAmount));
         }
 
-        rb.velocity *= 0.999f;
+        rb.velocity *= 0.1f;
     }
 }

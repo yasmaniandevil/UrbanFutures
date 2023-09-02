@@ -18,7 +18,7 @@ public class cameraFollow : MonoBehaviour
     {
         //distance between them is current position minus target object position
         initalOffset = transform.position - targetObject.position;
-        Debug.Log("inital offset" + initalOffset);
+        //Debug.Log("inital offset" + initalOffset);
     }
 
     // Update is called once per frame
@@ -27,7 +27,7 @@ public class cameraFollow : MonoBehaviour
         //the position of the camera is equal to the sum of the target 
         //obj position and the offset
         CameraPos = targetObject.position + initalOffset;
-        Debug.Log("CameraPos" + CameraPos);
+        //Debug.Log("CameraPos" + CameraPos);
         //transform the position of the camera based off of above
         transform.position = CameraPos;
     }
