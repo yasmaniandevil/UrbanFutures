@@ -11,11 +11,18 @@ public class CameraOnOff : MonoBehaviour
     public GameObject Camera2;
 
     public GameObject Camera3;
+
+    //create an array
+    //public GameObject[] Cameras;
+
+   //private int CurrentCam;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        //CurrentCam = 0;
+        //setCam(CurrentCam);
+
     }
 
     // Update is called once per frame
@@ -23,6 +30,30 @@ public class CameraOnOff : MonoBehaviour
     {
         
     }
+
+    /*public void setCam(int idx)
+    {
+        for (int i = 0; i < Cameras.Length; i++)
+        {
+            if (i == idx)
+            {
+                Cameras[i].SetActive(true);
+                
+            }
+            else
+            {
+                Cameras[i].SetActive(false);
+            }
+        }
+    }
+
+    public void toggleCam()
+    {
+        CurrentCam++;
+        if (CurrentCam > Cameras.Length - 1) ;
+            CurrentCam = 0;
+        setCam(CurrentCam);
+    }*/
 
     public void OnTriggerEnter(Collider other)
     {
@@ -32,5 +63,13 @@ public class CameraOnOff : MonoBehaviour
             Debug.Log("Disable: " + Camera1.name);
             Camera2.SetActive(true);
         }
+
+        if (other.gameObject.tag == "Trigger2")
+        {
+            Camera2.SetActive(false);
+            Camera3.SetActive(true);
+        }
     }
+    
+    
 }

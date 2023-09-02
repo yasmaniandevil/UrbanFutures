@@ -54,6 +54,6 @@ public class movement : MonoBehaviour
             rb.AddForce((Vector3.right * forceAmount));
         }
 
-        rb.velocity *= 0.1f;
+        rb.velocity *= 0.4f;
     }
 }
