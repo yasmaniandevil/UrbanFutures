@@ -14,6 +14,7 @@ namespace StarterAssets
 #endif
     public class ThirdPersonController : MonoBehaviour
     {
+        public static ThirdPersonController Instance;
         [Header("Player")]
         [Tooltip("Move speed of the character in m/s")]
         public float MoveSpeed = 2.0f;
@@ -130,6 +131,8 @@ namespace StarterAssets
             {
                 _mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
             }
+
+            Instance = this;
         }
 
         private void Start()
@@ -387,6 +390,20 @@ namespace StarterAssets
             {
                 AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), FootstepAudioVolume);
             }
+        }
+
+        public void MoveToLocation(Vector3 targetPos)
+        {
+            Vector3 moveDirection = targetPos - transform.position;
+            moveDirection.y = 0f;
+            
+            moveDirection.Normalize();
+            float moveSpeed = 5f;
+            moveDirection *= moveSpeed;
+
+            _controller.Move(moveDirection * Time.deltaTime);
+            Debug.Log("moving player to: " + targetPos);
+            //transform.position = targetPos;
         }
     }
 }

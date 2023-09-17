@@ -8,6 +8,7 @@ TagManager:
   - Player1
   - Trigger1
   - Trigger2
+  - sprites
   layers:
   - Default
   - TransparentFX

@@ -8,7 +8,7 @@ public class movement : MonoBehaviour
 
     public static movement Instance;
 
-    private Rigidbody rb;
+    private Rigidbody2D rb;
 
     public float forceAmount = 100;
 
@@ -28,7 +28,7 @@ public class movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -36,24 +36,29 @@ public class movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            rb.AddForce((Vector3.up * forceAmount));
+            //go forward
+            rb.AddForce(Vector2.up * forceAmount);
+            Debug.Log("w pressed");
         }
         
         if (Input.GetKey(KeyCode.S))
         {
-            rb.AddForce((Vector3.down * forceAmount));
+            //go backward
+            rb.AddForce(Vector2.down * forceAmount);
         }
         
         if (Input.GetKey(KeyCode.A))
         {
-            rb.AddForce((Vector3.left * forceAmount));
+            //go left
+            rb.AddForce(Vector2.left * forceAmount);
         }
         
         if (Input.GetKey(KeyCode.D))
         {
-            rb.AddForce((Vector3.right * forceAmount));
+            //go right
+            rb.AddForce(Vector2.right * forceAmount);
         }
 
-        rb.velocity *= 0.4f;
+        rb.velocity *= 0.9f;
     }
 }
