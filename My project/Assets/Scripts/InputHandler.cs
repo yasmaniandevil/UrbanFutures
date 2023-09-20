@@ -20,9 +20,9 @@ public class InputHandler : MonoBehaviour
             {
                 GameObject clickedObject = hit.collider.gameObject;
 
-                if (GameManager.sprites.Contains(clickedObject))
+                //if (GameManager.sprites.Contains(clickedObject))
                 {
-                    gameManager.OnSpriteClick(clickedObject);
+                    //gameManager.OnSpriteClick(clickedObject);
                 }
             }
         }

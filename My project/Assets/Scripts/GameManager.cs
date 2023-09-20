@@ -1,14 +1,16 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Fungus;
 using StarterAssets;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
 
-    //list of 3D sprite GameObjects
+    /*//list of 3D sprite GameObjects
     public static List<GameObject> sprites;
     //list of locations
     public List<Transform> locations;
@@ -64,7 +66,7 @@ public class GameManager : MonoBehaviour
             SelectNextSprite();
             MovePlayerToLocation();
         }
-    }
+    }*/
 
     // Update is called once per frame
     
@@ -72,6 +74,9 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        
+        if (Input.GetKey(KeyCode.R))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }
