@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Fungus;
 using StarterAssets;
 using UnityEngine;
 using UnityEngine.SceneManagement;
