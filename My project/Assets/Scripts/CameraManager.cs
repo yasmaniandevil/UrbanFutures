@@ -10,8 +10,6 @@ public class CameraManager : MonoBehaviour
     //accesible in the editor but keeping it private
     [SerializeField] private Camera one;
 
-    [SerializeField] private Camera two;
-
     [SerializeField] private GameObject player;
     // Start is called before the first frame update
     void Start()

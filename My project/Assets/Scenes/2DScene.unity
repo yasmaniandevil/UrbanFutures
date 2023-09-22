@@ -5036,7 +5036,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &108024460
 AudioListener:
   m_ObjectHideFlags: 0
@@ -6310,7 +6310,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   one: {fileID: 435878853}
-  two: {fileID: 1373730452}
   player: {fileID: 1166509149}
 --- !u!4 &404413303
 Transform:
@@ -8360,6 +8359,7 @@ Transform:
   - {fileID: 487846498}
   - {fileID: 145205223}
   - {fileID: 2078247386}
+  - {fileID: 1013291173}
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8611,13 +8611,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013291168}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.4, y: 49.87, z: -128.6}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 95.27333, y: -89.91408, z: -121.620834}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_Father: {fileID: 1004815805}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1023643142
 GameObject:
@@ -9468,7 +9468,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094977340588366727, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
@@ -10025,11 +10025,6 @@ RectTransform:
   m_AnchoredPosition: {x: -750.0001, y: 0}
   m_SizeDelta: {x: 1500, y: 335}
   m_Pivot: {x: 0, y: 0}
---- !u!20 &1373730452 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 5126527961139664767, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
-  m_PrefabInstance: {fileID: 1191409356}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1382692792
 GameObject:
   m_ObjectHideFlags: 0
@@ -10587,6 +10582,8 @@ GameObject:
   - component: {fileID: 1463138115}
   - component: {fileID: 1463138117}
   - component: {fileID: 1463138118}
+  - component: {fileID: 1463138120}
+  - component: {fileID: 1463138119}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -10664,7 +10661,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1463138117}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1463138119}
   variables: []
   description: 
   stepPause: 0
@@ -12534,8 +12532,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 857.61395
-    y: 644.6209
+    x: 871.0756
+    y: 646.544
     width: 136.5384
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -12544,7 +12542,9 @@ MonoBehaviour:
   blockName: CameraSwitch
   description: 
   eventHandler: {fileID: 1463138118}
-  commandList: []
+  commandList:
+  - {fileID: 1463138120}
+  - {fileID: 1463138119}
   suppressAllAutoSelections: 0
 --- !u!114 &1463138118
 MonoBehaviour:
@@ -12562,6 +12562,44 @@ MonoBehaviour:
   suppressBlockAutoSelect: 0
   keyPressType: 0
   keyCode: 273
+--- !u!114 &1463138119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463137984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 130
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 1463138019}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &1463138120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463137984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 129
+  indentLevel: 0
+  targetObject: {fileID: 404413301}
+  methodName: ChangeCamera
+  delay: 0
 --- !u!1 &1469197798
 GameObject:
   m_ObjectHideFlags: 0
