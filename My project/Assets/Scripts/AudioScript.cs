@@ -30,7 +30,7 @@ public class AudioScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine(FadeAudioSource.startFade(audioSource, 3, .1f));
-        Debug.Log("current volume " + audioSource.volume);
+        StartCoroutine(FadeAudioSource.startFade(audioSource, 100, .1f));
+        //Debug.Log("current volume " + audioSource.volume);
     }
 }

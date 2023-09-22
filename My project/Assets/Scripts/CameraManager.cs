@@ -6,50 +6,60 @@ using UnityEngine.Serialization;
 
 public class CameraManager : MonoBehaviour
 {
-
-
-    //accesible in the editor but keeping it private
-    [SerializeField] private Camera CamOne;
-    //[SerializeField] private Camera CamTwo;
+    //accessible in the editor but keeping it private
+    //[SerializeField] private Camera CamOne;
+    [SerializeField] private GameObject CamOne;
     [SerializeField] private GameObject playerCamOne;
+    [SerializeField] private GameObject playerCamTwo;
+    private GameObject currentCam;
 
     //private Camera currentCamera;
     // Start is called before the first frame update
     void Start()
     {
-        
+        //currentCam is camOne
+        currentCam = CamOne;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //check if a camera is active here and update currentCam accordingly
+        if (CamOne.activeSelf)
+        {
+            currentCam = CamOne;
+        }
+        //else if 
+        else if (playerCamOne.activeSelf)
+        {
+            currentCam = playerCamOne;
+        }
+        else if (playerCamTwo.activeSelf)
+        {
+            currentCam = playerCamTwo;
+        }
     }
 
     public void ChangeCamera()
     {
-        if (CamOne.isActiveAndEnabled)
+        //if cam one is current cam
+        if (CamOne == currentCam)
         {
+            Debug.Log("current cam assigned to currentCam Var:" + currentCam);
+            //set game object inactive
             CamOne.gameObject.SetActive(false);
+            //set cam one active
             playerCamOne.gameObject.SetActive(true);
-            Debug.Log("change to two");
+            Debug.Log("playerCamOne is active");
         }
-        else
+        else if(currentCam == playerCamOne)
         {
-            CamOne.gameObject.SetActive(true);
+            Debug.Log("current cam assigned to currentCam Var:" + currentCam);
+            CamOne.gameObject.SetActive(false);
             playerCamOne.gameObject.SetActive(false);
+            playerCamTwo.gameObject.SetActive(true);
+            Debug.Log("playerCamTwo is active");
         } 
-        {
-            
-        }
-        /*else  if (two.isActiveAndEnabled)
-        {
-            two.gameObject.SetActive(false);
-            one.gameObject.SetActive(true);
-            Debug.Log("change to one");
-        }*/
-
-
         
     }
 }
