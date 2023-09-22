@@ -2,15 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
+using UnityEngine.Serialization;
 
 public class CameraManager : MonoBehaviour
 {
 
 
     //accesible in the editor but keeping it private
-    [SerializeField] private Camera one;
+    [SerializeField] private Camera CamOne;
+    //[SerializeField] private Camera CamTwo;
+    [SerializeField] private GameObject playerCamOne;
 
-    [SerializeField] private GameObject player;
+    //private Camera currentCamera;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,16 +28,19 @@ public class CameraManager : MonoBehaviour
 
     public void ChangeCamera()
     {
-        if (one.isActiveAndEnabled)
+        if (CamOne.isActiveAndEnabled)
         {
-            one.gameObject.SetActive(false);
-            player.gameObject.SetActive(true);
+            CamOne.gameObject.SetActive(false);
+            playerCamOne.gameObject.SetActive(true);
             Debug.Log("change to two");
         }
         else
         {
-            one.gameObject.SetActive(true);
-            player.gameObject.SetActive(false);
+            CamOne.gameObject.SetActive(true);
+            playerCamOne.gameObject.SetActive(false);
+        } 
+        {
+            
         }
         /*else  if (two.isActiveAndEnabled)
         {
@@ -42,5 +48,8 @@ public class CameraManager : MonoBehaviour
             one.gameObject.SetActive(true);
             Debug.Log("change to one");
         }*/
+
+
+        
     }
 }
