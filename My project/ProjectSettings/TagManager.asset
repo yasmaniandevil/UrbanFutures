@@ -9,6 +9,7 @@ TagManager:
   - Trigger1
   - Trigger2
   - sprites
+  - Push
   layers:
   - Default
   - TransparentFX
