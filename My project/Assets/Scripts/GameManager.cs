@@ -2,34 +2,49 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using StarterAssets;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
 
-    /*//list of 3D sprite GameObjects
-    public static List<GameObject> sprites;
+    [FormerlySerializedAs("_player")] public CharacterController _playerController;
+    public GameObject _player;
+
+    //public Vector3 _playerPos;
+    
+    
+    //list of 3D sprite GameObjects
+    /*public static List<GameObject> sprites;
     //list of locations
     public List<Transform> locations;
     //the currently selected sprite
     private GameObject selectedSprite;
     //index to keep track of the currently selected sprite
-    private int currentIndex = -1;
+    private int currentIndex = -1;*/
 
     // Start is called before the first frame update
     void Start()
     {
-        //store gaameobjects w tag sprites into a spritearray
+        /*//store gaameobjects w tag sprites into a spritearray
         GameObject[] spriteArray = GameObject.FindGameObjectsWithTag("sprites");
         //create a new list of these sprite arrays
         sprites = new List<GameObject>(spriteArray);
         //run function select next sprite
-        SelectNextSprite();
+        SelectNextSprite();*/
+        
+        
     }
 
-    private void SelectNextSprite()
+    private void Awake()
+    {
+        //ResetPlayer();
+    }
+
+    /*private void SelectNextSprite()
     {
         //keep cycling thru the list
         currentIndex++;
@@ -73,9 +88,30 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.R))
+        /*if (_playerController.transform.position.y <= 35)
         {
+            Debug.Log("Fell");
+            //SceneManager.LoadScene(Application.loadedLevel);
+            _player.transform.position = new Vector3(1065, 38, -35);
+            Debug.Log("reset");
+
+        }*/
+        ResetPlayer();
+    }
+
+    void ResetPlayer()
+    {
+        
+        if (_playerController.transform.position.y <= 35)
+        {
+            //Debug.Log("Fell");
+            //SceneManager.LoadScene(Application.loadedLevel);
+            //_player.transform.position = new Vector3(1065, 38, -35);
+            //Debug.Log("reset");
             SceneManager.LoadScene(0);
+
         }
     }
+    //if player postion is < x than reset player postion to here
+    
 }
