@@ -10,6 +10,7 @@ TagManager:
   - Trigger2
   - sprites
   - Push
+  - ObjectsToCycle
   layers:
   - Default
   - TransparentFX
