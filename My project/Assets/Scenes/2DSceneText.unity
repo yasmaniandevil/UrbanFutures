@@ -252,7 +252,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 217
     y: -26
-    width: 108.13947
+    width: 108.37831
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -276,11 +276,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 140.56192, y: 178.97615}
+  scrollPos: {x: 498.82642, y: 196.90352}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 467
-  zoom: 0.43000045
+  zoom: 0.37000045
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -335,7 +335,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 478.6523
     y: 49.319157
-    width: 80.23253
+    width: 80.27023
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -438,7 +438,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 849.43756
     y: 6.8143616
-    width: 103.48831
+    width: 99.72967
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -471,7 +471,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 667.335
     y: 105.3784
-    width: 84.88368
+    width: 84.59455
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -497,7 +497,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 586.69293
     y: 83.008766
-    width: 73.25579
+    width: 71.6216
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -524,7 +524,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 380.41727
     y: 20.180363
-    width: 84.88368
+    width: 82.43239
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1692,7 +1692,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 768.26074
     y: 172.14409
-    width: 110.46506
+    width: 106.21615
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1759,7 +1759,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 886.66656
     y: 221.83742
-    width: 70.93021
+    width: 69.459435
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2008,7 +2008,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 989.77106
     y: 246.21135
-    width: 77.90695
+    width: 75.945915
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2068,7 +2068,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1114.6372
     y: 266.23883
-    width: 98.83716
+    width: 97.567505
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2112,7 +2112,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1268.9445
     y: 299.15472
-    width: 89.53484
+    width: 86.756714
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2141,7 +2141,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1381.9579
     y: 321.40692
-    width: 96.51158
+    width: 93.243195
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2304,7 +2304,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1517.3938
     y: 324.14673
-    width: 87.20926
+    width: 86.756714
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2332,7 +2332,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1677.0442
     y: 337.0413
-    width: 89.53484
+    width: 86.756714
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2358,7 +2358,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1819.6143
     y: 356.56158
-    width: 80.23253
+    width: 80.27023
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2960,6 +2960,7 @@ GameObject:
   - component: {fileID: 135463418}
   - component: {fileID: 135463417}
   - component: {fileID: 135463416}
+  - component: {fileID: 135463420}
   m_Layer: 0
   m_Name: Rebecca14SpinnningCube
   m_TagString: Untagged
@@ -3061,6 +3062,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 135463414}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &135463420
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135463414}
+  serializedVersion: 2
+  m_Mass: 3
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &138079771
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3131,6 +3148,7 @@ GameObject:
   - component: {fileID: 145205226}
   - component: {fileID: 145205225}
   - component: {fileID: 145205224}
+  - component: {fileID: 145205228}
   m_Layer: 0
   m_Name: Rebecca2SpinningCube
   m_TagString: Push
@@ -3232,6 +3250,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145205222}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &145205228
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145205222}
+  serializedVersion: 2
+  m_Mass: 3
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &152119454
 GameObject:
   m_ObjectHideFlags: 0
@@ -3245,6 +3279,7 @@ GameObject:
   - component: {fileID: 152119458}
   - component: {fileID: 152119457}
   - component: {fileID: 152119456}
+  - component: {fileID: 152119460}
   m_Layer: 0
   m_Name: Rebecca11SpinnningCube
   m_TagString: Untagged
@@ -3346,6 +3381,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152119454}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &152119460
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152119454}
+  serializedVersion: 2
+  m_Mass: 3
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &161857533
 GameObject:
   m_ObjectHideFlags: 0
@@ -5054,6 +5105,7 @@ GameObject:
   - component: {fileID: 429753599}
   - component: {fileID: 429753598}
   - component: {fileID: 429753597}
+  - component: {fileID: 429753601}
   m_Layer: 0
   m_Name: Rebecca10SpinnningCube
   m_TagString: Push
@@ -5155,6 +5207,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429753595}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &429753601
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429753595}
+  serializedVersion: 2
+  m_Mass: 3
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &458568447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5422,6 +5490,7 @@ GameObject:
   - component: {fileID: 487846496}
   - component: {fileID: 487846495}
   - component: {fileID: 487846499}
+  - component: {fileID: 487846500}
   m_Layer: 0
   m_Name: Rebecca1SpinningCube
   m_TagString: Push
@@ -5491,7 +5560,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 487846494}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 0}
 --- !u!4 &487846498
 Transform:
   m_ObjectHideFlags: 0
@@ -5523,6 +5592,22 @@ MonoBehaviour:
   xAngle: 0.1
   yAngle: 0.1
   zAngle: 0
+--- !u!54 &487846500
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487846494}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &497986631
 GameObject:
   m_ObjectHideFlags: 0
@@ -5536,6 +5621,7 @@ GameObject:
   - component: {fileID: 497986635}
   - component: {fileID: 497986634}
   - component: {fileID: 497986633}
+  - component: {fileID: 497986637}
   m_Layer: 0
   m_Name: Rebecca5SpinnningCube
   m_TagString: Untagged
@@ -5637,6 +5723,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 497986631}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &497986637
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497986631}
+  serializedVersion: 2
+  m_Mass: 3
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &499992863
 GameObject:
   m_ObjectHideFlags: 0
@@ -6468,6 +6570,7 @@ GameObject:
   - component: {fileID: 669214373}
   - component: {fileID: 669214372}
   - component: {fileID: 669214371}
+  - component: {fileID: 669214375}
   m_Layer: 0
   m_Name: Rebecca12SpinnningCube
   m_TagString: Untagged
@@ -6569,6 +6672,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669214369}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &669214375
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669214369}
+  serializedVersion: 2
+  m_Mass: 3
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &673142924
 GameObject:
   m_ObjectHideFlags: 0
@@ -6746,6 +6865,7 @@ GameObject:
   - component: {fileID: 694983776}
   - component: {fileID: 694983775}
   - component: {fileID: 694983774}
+  - component: {fileID: 694983778}
   m_Layer: 0
   m_Name: Rebecca13SpinnningCube
   m_TagString: Untagged
@@ -6847,6 +6967,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 694983772}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &694983778
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694983772}
+  serializedVersion: 2
+  m_Mass: 3
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &705678219
 GameObject:
   m_ObjectHideFlags: 0
@@ -11069,6 +11205,7 @@ GameObject:
   - component: {fileID: 1423861228}
   - component: {fileID: 1423861227}
   - component: {fileID: 1423861226}
+  - component: {fileID: 1423861230}
   m_Layer: 0
   m_Name: Rebecca9SpinnningCube
   m_TagString: Untagged
@@ -11170,6 +11307,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1423861224}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1423861230
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423861224}
+  serializedVersion: 2
+  m_Mass: 3
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1450133849
 GameObject:
   m_ObjectHideFlags: 0
@@ -12679,6 +12832,7 @@ GameObject:
   - component: {fileID: 1751205872}
   - component: {fileID: 1751205871}
   - component: {fileID: 1751205870}
+  - component: {fileID: 1751205874}
   m_Layer: 0
   m_Name: Rebecca7SpinnningCube
   m_TagString: Untagged
@@ -12780,6 +12934,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1751205868}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1751205874
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751205868}
+  serializedVersion: 2
+  m_Mass: 3
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1754589806
 GameObject:
   m_ObjectHideFlags: 0
@@ -12861,6 +13031,7 @@ GameObject:
   - component: {fileID: 1756682176}
   - component: {fileID: 1756682175}
   - component: {fileID: 1756682174}
+  - component: {fileID: 1756682178}
   m_Layer: 0
   m_Name: Rebecca8SpinnningCube
   m_TagString: Push
@@ -12962,6 +13133,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1756682172}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1756682178
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756682172}
+  serializedVersion: 2
+  m_Mass: 3
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1766396650
 GameObject:
   m_ObjectHideFlags: 0
@@ -13070,6 +13257,14 @@ PrefabInstance:
       propertyPath: JumpHeight
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 453084650579209848, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
+      propertyPath: BottomClamp
+      value: -89
+      objectReference: {fileID: 0}
+    - target: {fileID: 453084650579209848, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
+      propertyPath: RotationSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 937451010987979973, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.9075356
@@ -13100,7 +13295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4244626405643678211, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: cursorLocked
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5126527961139664760, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13208,7 +13403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7685886781334439055, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: canPush
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
@@ -14430,6 +14625,7 @@ GameObject:
   - component: {fileID: 2078247389}
   - component: {fileID: 2078247388}
   - component: {fileID: 2078247387}
+  - component: {fileID: 2078247391}
   m_Layer: 0
   m_Name: Rebecca4SpinnningCube
   m_TagString: Untagged
@@ -14531,6 +14727,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2078247385}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &2078247391
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078247385}
+  serializedVersion: 2
+  m_Mass: 3
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &2119633315
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14886,6 +15098,7 @@ GameObject:
   - component: {fileID: 2133470921}
   - component: {fileID: 2133470920}
   - component: {fileID: 2133470919}
+  - component: {fileID: 2133470923}
   m_Layer: 0
   m_Name: Rebecca15SpinnningCube
   m_TagString: Untagged
@@ -14987,3 +15200,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133470917}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &2133470923
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133470917}
+  serializedVersion: 2
+  m_Mass: 3
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
