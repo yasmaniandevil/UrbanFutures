@@ -26,20 +26,29 @@ public class FadeGameObject : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             SetAlpha(_objectsToCycle[currentIndex], 0f);
-            //Debug.Log("TransparentSpriteNo:" +currentIndex);
+            Debug.Log("TransparentSpriteNo:" +currentIndex);
             currentIndex = (currentIndex + 1) % numObjects;
+            Debug.Log("current index:" + currentIndex);
             SetAlpha(_objectsToCycle[currentIndex], 1f);
-            //Debug.Log("OpaqueSpriteNo:" +currentIndex);
+            Debug.Log("OpaqueSpriteNo:" +currentIndex);
         }
     }
 
     private void SetAlpha(GameObject parent, float alpha)
     {
-        SpriteRenderer[] spriteRenderers = parent.GetComponentsInChildren<SpriteRenderer>();
+        MeshRenderer[] meshRender = parent.GetComponentsInChildren<MeshRenderer>();
         
+            foreach (MeshRenderer meshRenderer in meshRender)
+            {
+                Color color = meshRenderer.material.color;
+                color.a = alpha;
+                meshRenderer.material.color = color;
+            }
+
+            SpriteRenderer[] spriteRenderers = parent.GetComponentsInChildren<SpriteRenderer>();
             foreach (SpriteRenderer spriteRenderer in spriteRenderers)
             {
-                Color color = spriteRenderer.color;
+                Color color = spriteRenderer.material.color;
                 color.a = alpha;
                 spriteRenderer.color = color;
             }

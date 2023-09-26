@@ -38,9 +38,9 @@ public class Cherry : MonoBehaviour
         {
             //get the array of sprite renderes and the number on the list and their color
             //set to new color where alpha is zero
-            Debug.Log("key pressed");
+            //Debug.Log("key pressed");
             _sprites[currentIndex].color = new Color(1f, 1f, 1f, 0f);
-            Debug.Log("set transparent");
+            //Debug.Log("set transparent");
 
             //storing int variable = (0 + 1)
             //increments current index by adding 1, wraps around
@@ -49,7 +49,7 @@ public class Cherry : MonoBehaviour
             //get the array of sprite renderes and the number on the list and their color
             //set to new color where alpha is one
             _sprites[currentIndex].color = new Color(1f, 1f, 1f, 1f);
-            Debug.Log("set opaque");
+            //Debug.Log("set opaque");
         }
     }
 }
