@@ -615,7 +615,8 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   webGLPowerPreference: 2
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    WebGL: MODULAR_3D_TEXT
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
