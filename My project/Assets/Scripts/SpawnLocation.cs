@@ -23,8 +23,8 @@ public class SpawnLocation : MonoBehaviour
         
     }
 
-    public void SpawnPointFunction(float x, float y, float z)
+    public void SpawnPointFunction()
     {
-        spawnPoint = new Vector3(x, y, z);
+        spawnPoint = new Vector3(55, 69, 40);
     }
 }
