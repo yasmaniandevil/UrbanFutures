@@ -34,7 +34,7 @@ public class NextSprite : MonoBehaviour
     void Update()
     {
         //if you click the right arrow
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             //get the array of sprite renderes and the number on the list and their color
             //set to new color where alpha is zero
