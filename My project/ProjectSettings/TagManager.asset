@@ -12,6 +12,7 @@ TagManager:
   - Push
   - ObjectsToCycle
   - MarinaCycle
+  - PetraCycle
   layers:
   - Default
   - TransparentFX
