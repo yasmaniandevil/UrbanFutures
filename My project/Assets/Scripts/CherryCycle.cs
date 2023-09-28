@@ -39,16 +39,16 @@ public class CherryCycle : MonoBehaviour
             _sprites[i].color = new Color(1f, 1f, 1f, 0f);
         }
 
-        _audioSource = GetComponent<AudioSource>();
+        //_audioSource = GetComponent<AudioSource>();
 
         //register on click event handlers for pause buttons
-        for (int i = 0; i < pauseButtons.Length; i++)
+        /*for (int i = 0; i < pauseButtons.Length; i++)
         {
             // current button index
             int buttonIndex = i;
             //
-            pauseButtons[i].onClick.AddListener(() => onPauseButtonClick(buttonIndex));
-        }
+            //pauseButtons[i].onClick.AddListener(() => onPauseButtonClick(buttonIndex));
+        }*/
     }
 
     // Update is called once per frame
@@ -76,22 +76,22 @@ public class CherryCycle : MonoBehaviour
 
             if (_sprites[currentIndex].color.a == 1f && currentIndex < audioClips.Length)
             {
-                _audioSource.clip = audioClips[currentIndex];
-                _audioSource.Play();
+                //_audioSource.clip = audioClips[currentIndex];
+                //_audioSource.Play();
                 Debug.Log("audio clip" + audioClips[currentIndex]);
             }
         }
         
     }
 
-    public void onPauseButtonClick(int buttonIndex)
+    /*public void onPauseButtonClick(int buttonIndex)
     {
         //check if audio source is playing and matches buttons assignment
         if (_audioSource.isPlaying && currentIndex == buttonIndex)
         {
             _audioSource.Pause();
         }
-    }
+    }*/
     
     //on trigger enter play audio source
     //button that is active on the texts with sprites
