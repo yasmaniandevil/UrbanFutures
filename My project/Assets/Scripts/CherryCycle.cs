@@ -17,7 +17,7 @@ public class CherryCycle : MonoBehaviour
     private AudioSource _audioSource;
 
     //array of the list of buttons
-    public Button[] pauseButtons;
+    public Button pauseButton;
     
     // Start is called before the first frame update
     void Start()
@@ -39,16 +39,9 @@ public class CherryCycle : MonoBehaviour
             _sprites[i].color = new Color(1f, 1f, 1f, 0f);
         }
 
-        //_audioSource = GetComponent<AudioSource>();
-
-        //register on click event handlers for pause buttons
-        /*for (int i = 0; i < pauseButtons.Length; i++)
-        {
-            // current button index
-            int buttonIndex = i;
-            //
-            //pauseButtons[i].onClick.AddListener(() => onPauseButtonClick(buttonIndex));
-        }*/
+        _audioSource = GetComponent<AudioSource>();
+            
+        pauseButton.onClick.AddListener(() => onPauseButtonClick());
     }
 
     // Update is called once per frame
@@ -60,38 +53,58 @@ public class CherryCycle : MonoBehaviour
             //get the array of sprite renderes and the number on the list and their color
             //set to new color where alpha is zero
             //Debug.Log("key pressed");
-            _sprites[currentIndex].color = new Color(1f, 1f, 1f, 0f);
+            //_sprites[currentIndex].color = new Color(1f, 1f, 1f, 0f);
             //Debug.Log("set transparent");
-
+            
+            Debug.Log("Alpha of: " + _sprites[currentIndex].color);
+            
+            switch (currentIndex)
+            {
+                case 0:
+                    _audioSource.clip = audioClips[0];
+                    _audioSource.Play();
+                    break;
+                case 2:
+                    _audioSource.Pause();
+                    _audioSource.clip = audioClips[1];
+                    _audioSource.Play();
+                    break;
+                case 4:
+                    _audioSource.Pause();
+                    _audioSource.clip = audioClips[2];
+                    _audioSource.Play();
+                    break;
+                case 6:
+                    _audioSource.Pause();
+                    _audioSource.clip = audioClips[3];
+                    _audioSource.Play();
+                    break;
+                default:
+                    Debug.Log("DEFAULT");
+                    break;
+            }
+            
             //storing int variable = (0 + 1)
             //increments current index by adding 1, wraps around
-            currentIndex = (currentIndex + 1) % numSprites;
+            currentIndex = currentIndex + 1;
 
             //get the array of sprite renderes and the number on the list and their color
             //set to new color where alpha is one
             _sprites[currentIndex].color = new Color(1f, 1f, 1f, 1f);
             //Debug.Log("set opaque");
             
-            Debug.Log("Alpha of: " + _sprites[currentIndex].color);
-
-            if (_sprites[currentIndex].color.a == 1f && currentIndex < audioClips.Length)
-            {
-                //_audioSource.clip = audioClips[currentIndex];
-                //_audioSource.Play();
-                Debug.Log("audio clip" + audioClips[currentIndex]);
-            }
         }
         
     }
 
-    /*public void onPauseButtonClick(int buttonIndex)
+    public void onPauseButtonClick()
     {
         //check if audio source is playing and matches buttons assignment
-        if (_audioSource.isPlaying && currentIndex == buttonIndex)
+        if (_audioSource.isPlaying)
         {
             _audioSource.Pause();
         }
-    }*/
+    }
     
     //on trigger enter play audio source
     //button that is active on the texts with sprites

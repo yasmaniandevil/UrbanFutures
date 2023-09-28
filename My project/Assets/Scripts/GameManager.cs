@@ -10,12 +10,12 @@ using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
-
+    public static Vector3 spawnLocation;
+    
     [FormerlySerializedAs("_player")] public CharacterController _playerController;
     public GameObject _player;
 
     //public Vector3 _playerPos;
-    
     
     //list of 3D sprite GameObjects
     /*public static List<GameObject> sprites;
@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
         //run function select next sprite
         SelectNextSprite();*/
         
+        //
         
     }
 
