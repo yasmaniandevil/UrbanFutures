@@ -2,20 +2,23 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class CherryCycle : MonoBehaviour
 {
     private SpriteRenderer[] _sprites; //array to store the sprites
-    private int currentIndex = 0; //current index of sprites set at zero
+    private static int currentIndex = 0; //current index of sprites set at zero
     private int numSprites; //the number of sprites
 
-    public static AudioSource _cherryAudio1;
-    /*public AudioSource _cherryAudio2;
-    public AudioSource _cherryAudio3;
-    public AudioSource _cherryAudio4;
-    public AudioSource _cherryAudio5;*/
+    //array of audio clips
+    public AudioClip[] audioClips;
+    //variable of audio source
+    private AudioSource _audioSource;
 
-
+    //array of the list of buttons
+    public Button[] pauseButtons;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +37,17 @@ public class CherryCycle : MonoBehaviour
             //all renderers of children, their color equals
             // new color where the alpha is set to zero
             _sprites[i].color = new Color(1f, 1f, 1f, 0f);
+        }
+
+        _audioSource = GetComponent<AudioSource>();
+
+        //register on click event handlers for pause buttons
+        for (int i = 0; i < pauseButtons.Length; i++)
+        {
+            // current button index
+            int buttonIndex = i;
+            //
+            pauseButtons[i].onClick.AddListener(() => onPauseButtonClick(buttonIndex));
         }
     }
 
@@ -59,33 +73,24 @@ public class CherryCycle : MonoBehaviour
             //Debug.Log("set opaque");
             
             Debug.Log("Alpha of: " + _sprites[currentIndex].color);
-        }
 
-        /*if (currentIndex == 1)
+            if (_sprites[currentIndex].color.a == 1f && currentIndex < audioClips.Length)
+            {
+                _audioSource.clip = audioClips[currentIndex];
+                _audioSource.Play();
+                Debug.Log("audio clip" + audioClips[currentIndex]);
+            }
+        }
+        
+    }
+
+    public void onPauseButtonClick(int buttonIndex)
+    {
+        //check if audio source is playing and matches buttons assignment
+        if (_audioSource.isPlaying && currentIndex == buttonIndex)
         {
-            _cherryAudio1.Play();
-            Debug.Log("audio1played");
-        } else if (currentIndex == 3)
-        {
-            _cherryAudio1.Pause();
-            _cherryAudio2.Play();
-            Debug.Log("audio2played");
-        }else if (currentIndex == 5)
-        {
-            _cherryAudio2.Pause();
-            _cherryAudio3.Play();
-            Debug.Log("audio3played");
-        }else if (currentIndex == 7)
-        {
-            _cherryAudio3.Pause();
-            _cherryAudio4.Play();
-            Debug.Log("audio4played");
-        }else if (currentIndex == 8)
-        {
-            _cherryAudio4.Pause();
-            _cherryAudio5.Play();
-            Debug.Log("audio5played");
-        }*/
+            _audioSource.Pause();
+        }
     }
     
     //on trigger enter play audio source

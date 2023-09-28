@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
 #endif
@@ -65,15 +67,33 @@ namespace StarterAssets
 		{
 			sprint = newSprintState;
 		}
-		
+
+		private void Update()
+		{
+			if (Input.GetMouseButton(0))
+			{
+				if (!EventSystem.current.IsPointerOverGameObject())
+				{
+					cursorLocked = !cursorLocked;
+					SetCursorState(cursorLocked);
+				}
+			}
+		}
+
 		private void OnApplicationFocus(bool hasFocus)
 		{
-			SetCursorState(cursorLocked);
+			if (hasFocus)
+			{
+				cursorLocked = true;
+				SetCursorState(cursorLocked);
+			}
+			
 		}
 
 		private void SetCursorState(bool newState)
 		{
 			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
+			Cursor.visible = !newState;
 		}
 	}
 	
