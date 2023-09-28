@@ -80,6 +80,6 @@ public class PetraCycle : MonoBehaviour
                 spriteRenderer.color = color;
             }
         
-        Debug.Log("Alpha of " + parent.name + "is now" + alpha);
+        //Debug.Log("Alpha of " + parent.name + "is now" + alpha);
     }
 }

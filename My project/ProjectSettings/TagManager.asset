@@ -13,6 +13,7 @@ TagManager:
   - ObjectsToCycle
   - MarinaCycle
   - PetraCycle
+  - CherryAudio1
   layers:
   - Default
   - TransparentFX

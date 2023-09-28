@@ -28,14 +28,14 @@ public class ObjectsToCycle : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            Debug.Log("KeyPressed");
+            //Debug.Log("KeyPressed");
             _objectsToCycle[currentIndex].SetActive(false);
-            Debug.Log("current game obj" + currentIndex);
+            //Debug.Log("current game obj" + currentIndex);
             currentIndex = (currentIndex + 1) % numObjects;
-            Debug.Log("current index: " + currentIndex);
+            //Debug.Log("current index: " + currentIndex);
             
             _objectsToCycle[currentIndex].SetActive(true);
-            Debug.Log("Switched to GameObject: " + currentIndex);
+            //Debug.Log("Switched to GameObject: " + currentIndex);
         }
         
        

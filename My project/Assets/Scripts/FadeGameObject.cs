@@ -39,7 +39,7 @@ public class FadeGameObject : MonoBehaviour
             //Debug.Log("TransparentSpriteNo:" +currentIndex);
             //index goes up by one
             currentIndex = (currentIndex + 1) % numObjects;
-            Debug.Log("current index:" + currentIndex);
+            //Debug.Log("current index:" + currentIndex);
             //set alpha of next obj in array to 1
             SetAlpha(_objectsToCycle[currentIndex], 1f);
             //Debug.Log("Sprite ON:" +currentIndex);
@@ -80,7 +80,7 @@ public class FadeGameObject : MonoBehaviour
                 spriteRenderer.color = color;
             }
         
-        Debug.Log("Alpha of " + parent.name + "is now" + alpha);
+        //Debug.Log("Alpha of " + parent.name + "is now" + alpha);
     }
     
 }
