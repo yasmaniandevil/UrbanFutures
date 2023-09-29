@@ -312,6 +312,7 @@ GameObject:
   - component: {fileID: 263275977}
   - component: {fileID: 263275976}
   - component: {fileID: 263275975}
+  - component: {fileID: 263275978}
   m_Layer: 5
   m_Name: Fernande
   m_TagString: Untagged
@@ -382,7 +383,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 263275976}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 263275978}
+        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_MethodName: SpawnPointFunctionFernande
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &263275976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -421,6 +434,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263275973}
   m_CullTransparentMesh: 1
+--- !u!114 &263275978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263275973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &266306964
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,6 +458,7 @@ GameObject:
   - component: {fileID: 266306968}
   - component: {fileID: 266306967}
   - component: {fileID: 266306966}
+  - component: {fileID: 266306969}
   m_Layer: 5
   m_Name: Perla
   m_TagString: Untagged
@@ -503,7 +529,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 266306967}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 266306969}
+        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_MethodName: SpawnPointFunctionPeral
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &266306967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -542,6 +580,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266306964}
   m_CullTransparentMesh: 1
+--- !u!114 &266306969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266306964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &373002668
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,6 +604,7 @@ GameObject:
   - component: {fileID: 373002672}
   - component: {fileID: 373002671}
   - component: {fileID: 373002670}
+  - component: {fileID: 373002673}
   m_Layer: 5
   m_Name: Care
   m_TagString: Untagged
@@ -624,7 +675,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 373002671}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 373002673}
+        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_MethodName: SpawnPointFunctionCare
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &373002671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -663,6 +726,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373002668}
   m_CullTransparentMesh: 1
+--- !u!114 &373002673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373002668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &491182307
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,6 +871,7 @@ GameObject:
   - component: {fileID: 654843959}
   - component: {fileID: 654843958}
   - component: {fileID: 654843957}
+  - component: {fileID: 654843960}
   m_Layer: 5
   m_Name: Dami
   m_TagString: Untagged
@@ -866,7 +942,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 654843958}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 654843960}
+        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_MethodName: SpawnPointFunctionDami
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &654843958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -905,6 +993,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 654843955}
   m_CullTransparentMesh: 1
+--- !u!114 &654843960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654843955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &670362793
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,6 +1017,7 @@ GameObject:
   - component: {fileID: 670362797}
   - component: {fileID: 670362796}
   - component: {fileID: 670362795}
+  - component: {fileID: 670362798}
   m_Layer: 5
   m_Name: Liad
   m_TagString: Untagged
@@ -987,7 +1088,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 670362796}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 670362798}
+        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_MethodName: SpawnPointFunctionLiad
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &670362796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1026,6 +1139,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 670362793}
   m_CullTransparentMesh: 1
+--- !u!114 &670362798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670362793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &682024357
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,6 +1257,7 @@ GameObject:
   - component: {fileID: 704268523}
   - component: {fileID: 704268522}
   - component: {fileID: 704268521}
+  - component: {fileID: 704268524}
   m_Layer: 5
   m_Name: Nat
   m_TagString: Untagged
@@ -1202,7 +1328,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 704268522}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 704268524}
+        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_MethodName: SpawnPointFunctionNat
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &704268522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1241,6 +1379,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 704268519}
   m_CullTransparentMesh: 1
+--- !u!114 &704268524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704268519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &889508156
 GameObject:
   m_ObjectHideFlags: 0
@@ -1253,6 +1403,7 @@ GameObject:
   - component: {fileID: 889508160}
   - component: {fileID: 889508159}
   - component: {fileID: 889508158}
+  - component: {fileID: 889508161}
   m_Layer: 5
   m_Name: Jacob
   m_TagString: Untagged
@@ -1323,7 +1474,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 889508159}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 889508161}
+        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_MethodName: SpawnPointFunctionJacob
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &889508159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1362,6 +1525,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 889508156}
   m_CullTransparentMesh: 1
+--- !u!114 &889508161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889508156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &948538742
 GameObject:
   m_ObjectHideFlags: 0
@@ -1647,6 +1822,7 @@ GameObject:
   - component: {fileID: 1070445615}
   - component: {fileID: 1070445614}
   - component: {fileID: 1070445613}
+  - component: {fileID: 1070445616}
   m_Layer: 5
   m_Name: Rhianna
   m_TagString: Untagged
@@ -1717,7 +1893,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1070445614}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1070445616}
+        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_MethodName: SpawnPointFunctionRhianna
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1070445614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1756,6 +1944,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070445611}
   m_CullTransparentMesh: 1
+--- !u!114 &1070445616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070445611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1115578798
 GameObject:
   m_ObjectHideFlags: 0
@@ -1968,6 +2168,7 @@ GameObject:
   - component: {fileID: 1536152821}
   - component: {fileID: 1536152820}
   - component: {fileID: 1536152819}
+  - component: {fileID: 1536152822}
   m_Layer: 5
   m_Name: Marina
   m_TagString: Untagged
@@ -2038,7 +2239,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1536152820}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1536152817}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1536152820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2077,6 +2290,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536152817}
   m_CullTransparentMesh: 1
+--- !u!114 &1536152822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536152817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1585168738
 GameObject:
   m_ObjectHideFlags: 0
@@ -2089,6 +2314,7 @@ GameObject:
   - component: {fileID: 1585168742}
   - component: {fileID: 1585168741}
   - component: {fileID: 1585168740}
+  - component: {fileID: 1585168743}
   m_Layer: 5
   m_Name: Adele
   m_TagString: Untagged
@@ -2159,7 +2385,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1585168741}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1585168743}
+        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_MethodName: SpawnPointFunctionAdele
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1585168741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2198,6 +2436,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1585168738}
   m_CullTransparentMesh: 1
+--- !u!114 &1585168743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585168738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1667044919
 GameObject:
   m_ObjectHideFlags: 0
@@ -2502,6 +2752,7 @@ GameObject:
   - component: {fileID: 1785153040}
   - component: {fileID: 1785153039}
   - component: {fileID: 1785153038}
+  - component: {fileID: 1785153041}
   m_Layer: 5
   m_Name: Petra
   m_TagString: Untagged
@@ -2572,7 +2823,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1785153039}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1785153041}
+        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_MethodName: SpawnPointFunctionPetra
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1785153039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2611,6 +2874,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1785153036}
   m_CullTransparentMesh: 1
+--- !u!114 &1785153041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785153036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1987499322
 GameObject:
   m_ObjectHideFlags: 0
@@ -2707,6 +2982,7 @@ GameObject:
   - component: {fileID: 2107481375}
   - component: {fileID: 2107481374}
   - component: {fileID: 2107481373}
+  - component: {fileID: 2107481376}
   m_Layer: 5
   m_Name: Vishu
   m_TagString: Untagged
@@ -2777,7 +3053,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2107481374}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2107481376}
+        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_MethodName: SpawnPointFunctionVishu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2107481374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2816,3 +3104,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2107481371}
   m_CullTransparentMesh: 1
+--- !u!114 &2107481376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107481371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

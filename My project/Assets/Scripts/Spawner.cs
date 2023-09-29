@@ -9,7 +9,8 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player.transform.position = GameManager.spawnLocation;
+        //Instantiate(player, new Vector3(), Quaternion.identity);
+        Debug.Log("instantiate:" + player.transform.position);
     }
 
     // Update is called once per frame
