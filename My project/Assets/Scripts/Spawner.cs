@@ -10,7 +10,7 @@ public class Spawner : MonoBehaviour
     void Start()
     {
         //Instantiate(player, new Vector3(), Quaternion.identity);
-        Debug.Log("instantiate:" + player.transform.position);
+        //Debug.Log("instantiate:" + player.transform.position);
     }
 
     // Update is called once per frame

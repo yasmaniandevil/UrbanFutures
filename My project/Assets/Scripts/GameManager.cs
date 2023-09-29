@@ -98,6 +98,7 @@ public class GameManager : MonoBehaviour
 
         }*/
         ResetPlayer();
+        RestartScene();
     }
 
     void ResetPlayer()
@@ -109,8 +110,16 @@ public class GameManager : MonoBehaviour
             //SceneManager.LoadScene(Application.loadedLevel);
             //_player.transform.position = new Vector3(1065, 38, -35);
             //Debug.Log("reset");
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
 
+        }
+    }
+
+    void RestartScene()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(1);
         }
     }
     //if player postion is < x than reset player postion to here
