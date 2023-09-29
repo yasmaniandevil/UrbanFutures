@@ -10,6 +10,7 @@ public class CherryCycle : MonoBehaviour
     private SpriteRenderer[] _sprites; //array to store the sprites
     private static int currentIndex = 0; //current index of sprites set at zero
     private int numSprites; //the number of sprites
+    private bool isPaused = false;
 
     //array of audio clips
     public AudioClip[] audioClips;
@@ -79,6 +80,11 @@ public class CherryCycle : MonoBehaviour
                     _audioSource.clip = audioClips[3];
                     _audioSource.Play();
                     break;
+                case 9:
+                    _audioSource.Pause();
+                    _audioSource.clip = audioClips[4];
+                    _audioSource.Play();
+                    break;
                 default:
                     Debug.Log("DEFAULT");
                     break;
@@ -93,6 +99,12 @@ public class CherryCycle : MonoBehaviour
             _sprites[currentIndex].color = new Color(1f, 1f, 1f, 1f);
             //Debug.Log("set opaque");
             
+        }
+        
+        
+        if (Input.GetKey(KeyCode.Q))
+        {
+            TogglePause();
         }
         
     }
@@ -114,5 +126,19 @@ public class CherryCycle : MonoBehaviour
     //pause audio
     
     
-    
+    void TogglePause()
+    {
+        if (isPaused)
+        {
+            _audioSource.UnPause();
+            isPaused = false;
+            Debug.Log("Audio resumed");
+        }
+        else
+        {
+            _audioSource.Pause();
+            isPaused = true;
+            Debug.Log("Audio paused");
+        }
+    }
 }
