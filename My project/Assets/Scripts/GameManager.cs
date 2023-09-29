@@ -13,9 +13,9 @@ public class GameManager : MonoBehaviour
     public static Vector3 spawnLocation;
     
     [FormerlySerializedAs("_player")] public CharacterController _playerController;
-    public GameObject _player;
+    public static GameObject _player;
 
-    //public Vector3 _playerPos;
+    public Vector3 _playerPos;
     
     //list of 3D sprite GameObjects
     /*public static List<GameObject> sprites;

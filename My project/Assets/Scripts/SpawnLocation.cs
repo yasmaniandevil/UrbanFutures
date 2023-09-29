@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,31 +7,28 @@ using UnityEngine.SceneManagement;
 public class SpawnLocation : MonoBehaviour
 
 {
-
-    //have a spawn point
-    //make a spawnPoint function
-    
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        //Debug.Log("Player's initial position: " + transform.position);
+        // Set player's position using GameManager.spawnLocation
+        //transform.position = GameManager.spawnLocation;
+        //Debug.Log("Player's final position: " + transform.position);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void SpawnPointFunctionStart()
     {
         GameManager.spawnLocation = new Vector3(1045.6f, 47.99f, -56.66f);
-        Debug.Log("spawn Location" + GameManager.spawnLocation);
+        //Debug.Log("spawn Location" + GameManager._player.transform.position);
         SceneManager.LoadScene(1);
     }
     public void SpawnPointFunctionRebecca()
     {
-        GameManager.spawnLocation = new Vector3(-23.156f, 7.188f, 17.662f);
-        Debug.Log("spawn Location" + GameManager.spawnLocation);
+        //GameManager.spawnLocation = new Vector3(-23.156f, 7.188f, 17.662f);
+        //Debug.Log("spawn Location" + GameManager.spawnLocation);
+        //SceneManager.LoadScene(1);
+
+        Vector3 newPos = new Vector3(-23.156f, 7.188f, 17.662f);
+        GameManager._player.GetComponent<ForPlayer>().SetPlayerPosition(new Vector3());
         SceneManager.LoadScene(1);
     }
     public void SpawnPointFunctionCherry()
