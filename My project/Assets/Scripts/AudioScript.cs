@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Fungus;
 using UnityEngine;
 using UnityEngine.UIElements;
 using TMPro;
@@ -8,8 +9,8 @@ using TMPro;
 public class AudioScript : MonoBehaviour
 {
     public AudioSource audioSource;
-    public Button button;
     private bool playerEntered = false;
+    private bool isPaused = false;
 
     void Start()
     {
@@ -41,12 +42,11 @@ public class AudioScript : MonoBehaviour
     {
         //StartCoroutine(FadeAudioSource.startFade(audioSource, 100, .1f));
         //Debug.Log("current volume " + audioSource.volume);
-        
+
+
         if (Input.GetKey(KeyCode.Q))
         {
-            Debug.Log("Q clicked");
-            audioSource.Pause();
-            Debug.Log("audio paused");
+            TogglePause();
         }
         
         
@@ -71,6 +71,22 @@ public class AudioScript : MonoBehaviour
             audioSource.Pause();
             Debug.Log("player entered set to false");
             Debug.Log("Player exited the trigger area");
+        }
+    }
+    
+    void TogglePause()
+    {
+        if (isPaused)
+        {
+            audioSource.UnPause();
+            isPaused = false;
+            Debug.Log("Audio resumed");
+        }
+        else
+        {
+            audioSource.Pause();
+            isPaused = true;
+            Debug.Log("Audio paused");
         }
     }
 
