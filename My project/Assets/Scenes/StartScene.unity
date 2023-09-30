@@ -385,7 +385,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 263275978}
-        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: SpawnPointFunctionFernande
         m_Mode: 1
         m_Arguments:
@@ -443,7 +443,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 263275973}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Script: {fileID: 11500000, guid: c70691f90c1d9954081e32c1bd6b8e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &266306964
@@ -531,7 +531,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 266306969}
-        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: SpawnPointFunctionPeral
         m_Mode: 1
         m_Arguments:
@@ -589,7 +589,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 266306964}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Script: {fileID: 11500000, guid: c70691f90c1d9954081e32c1bd6b8e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &357538571
@@ -810,7 +810,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 373002673}
-        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: SpawnPointFunctionCare
         m_Mode: 1
         m_Arguments:
@@ -868,7 +868,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 373002668}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Script: {fileID: 11500000, guid: c70691f90c1d9954081e32c1bd6b8e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &491182307
@@ -1089,7 +1089,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 654843960}
-        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: SpawnPointFunctionDami
         m_Mode: 1
         m_Arguments:
@@ -1147,7 +1147,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 654843955}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Script: {fileID: 11500000, guid: c70691f90c1d9954081e32c1bd6b8e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &670362793
@@ -1235,7 +1235,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 670362798}
-        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: SpawnPointFunctionLiad
         m_Mode: 1
         m_Arguments:
@@ -1293,7 +1293,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 670362793}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Script: {fileID: 11500000, guid: c70691f90c1d9954081e32c1bd6b8e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &682024357
@@ -1475,7 +1475,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 704268524}
-        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: SpawnPointFunctionNat
         m_Mode: 1
         m_Arguments:
@@ -1533,7 +1533,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 704268519}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Script: {fileID: 11500000, guid: c70691f90c1d9954081e32c1bd6b8e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &889508156
@@ -1621,7 +1621,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 889508161}
-        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: SpawnPointFunctionJacob
         m_Mode: 1
         m_Arguments:
@@ -1679,7 +1679,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 889508156}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Script: {fileID: 11500000, guid: c70691f90c1d9954081e32c1bd6b8e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &948538742
@@ -1895,7 +1895,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 970423431}
-        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: SpawnPointFunctionStart
         m_Mode: 1
         m_Arguments:
@@ -1953,7 +1953,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 970423426}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Script: {fileID: 11500000, guid: c70691f90c1d9954081e32c1bd6b8e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1070445611
@@ -2041,7 +2041,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1070445616}
-        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: SpawnPointFunctionRhianna
         m_Mode: 1
         m_Arguments:
@@ -2099,7 +2099,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1070445611}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Script: {fileID: 11500000, guid: c70691f90c1d9954081e32c1bd6b8e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1115578798
@@ -2386,13 +2386,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1536152817}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1536152822}
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
+        m_MethodName: SpawnPointFunctionMarina
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2445,7 +2445,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1536152817}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Script: {fileID: 11500000, guid: c70691f90c1d9954081e32c1bd6b8e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1585168738
@@ -2533,7 +2533,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1585168743}
-        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: SpawnPointFunctionAdele
         m_Mode: 1
         m_Arguments:
@@ -2591,7 +2591,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1585168738}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Script: {fileID: 11500000, guid: c70691f90c1d9954081e32c1bd6b8e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1667044919
@@ -2679,7 +2679,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1667044924}
-        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: SpawnPointFunctionRebecca
         m_Mode: 1
         m_Arguments:
@@ -2737,7 +2737,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1667044919}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Script: {fileID: 11500000, guid: c70691f90c1d9954081e32c1bd6b8e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1725483755
@@ -2825,7 +2825,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1725483760}
-        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: SpawnPointFunctionCherry
         m_Mode: 1
         m_Arguments:
@@ -2883,7 +2883,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1725483755}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Script: {fileID: 11500000, guid: c70691f90c1d9954081e32c1bd6b8e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1785153036
@@ -2971,7 +2971,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1785153041}
-        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: SpawnPointFunctionPetra
         m_Mode: 1
         m_Arguments:
@@ -3029,7 +3029,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1785153036}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Script: {fileID: 11500000, guid: c70691f90c1d9954081e32c1bd6b8e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1987499322
@@ -3201,7 +3201,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2107481376}
-        m_TargetAssemblyTypeName: SpawnLocation, Assembly-CSharp
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: SpawnPointFunctionVishu
         m_Mode: 1
         m_Arguments:
@@ -3259,6 +3259,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2107481371}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1b92b143bac57944aa83f85c26dbc54, type: 3}
+  m_Script: {fileID: 11500000, guid: c70691f90c1d9954081e32c1bd6b8e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

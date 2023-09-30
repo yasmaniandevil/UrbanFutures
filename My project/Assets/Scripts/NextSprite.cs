@@ -7,6 +7,7 @@ public class NextSprite : MonoBehaviour
     private SpriteRenderer[] _sprites; //array to store the sprites
     private int currentIndex = 0; //current index of sprites set at zero
     private int numSprites; //the number of sprites
+    private bool playerInsideTrigger = false;
 
 
     // Start is called before the first frame update
@@ -33,38 +34,44 @@ public class NextSprite : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if you click the right arrow
-        if (Input.GetKeyDown(KeyCode.E))
+        if (playerInsideTrigger)
         {
-            //get the array of sprite renderes and the number on the list and their color
-            //set to new color where alpha is zero
-            //Debug.Log("key pressed");
-            _sprites[currentIndex].color = new Color(1f, 1f, 1f, 0f);
-            //Debug.Log("set transparent");
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                //get the array of sprite renderes and the number on the list and their color
+                //set to new color where alpha is zero
+                //Debug.Log("key pressed");
+                _sprites[currentIndex].color = new Color(1f, 1f, 1f, 0f);
+                //Debug.Log("set transparent");
 
-            //storing int variable = (0 + 1)
-            //increments current index by adding 1, wraps around
-            currentIndex = (currentIndex + 1) % numSprites;
+                //storing int variable = (0 + 1)
+                //increments current index by adding 1, wraps around
+                currentIndex = (currentIndex + 1) % numSprites;
 
-            //get the array of sprite renderes and the number on the list and their color
-            //set to new color where alpha is one
-            _sprites[currentIndex].color = new Color(1f, 1f, 1f, 1f);
-            //Debug.Log("set opaque");
+                //get the array of sprite renderes and the number on the list and their color
+                //set to new color where alpha is one
+                _sprites[currentIndex].color = new Color(1f, 1f, 1f, 1f);
+                //Debug.Log("set opaque");
+            }
+        }
+        //if you click the right arrow
+        
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInsideTrigger = true; // Set the flag to indicate the player is inside the trigger area
         }
     }
 
-    void FadeIn()
+    // OnTriggerExit is called when the player exits the trigger area
+    private void OnTriggerExit(Collider other)
     {
-       
-
-    }
-
-    void FadeOut()
-    {
-        
-    }
-    void SetFade()
-    {
-        
+        if (other.CompareTag("Player"))
+        {
+            playerInsideTrigger = false; // Set the flag to indicate the player has exited the trigger area
+        }
     }
 }

@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class CherryCycle : MonoBehaviour
@@ -11,15 +13,13 @@ public class CherryCycle : MonoBehaviour
     private static int currentIndex = 0; //current index of sprites set at zero
     private int numSprites; //the number of sprites
     private bool isPaused = false;
+    private bool PlayerInside = false;
 
     //array of audio clips
     public AudioClip[] audioClips;
     //variable of audio source
     private AudioSource _audioSource;
 
-    //array of the list of buttons
-    public Button pauseButton;
-    
     // Start is called before the first frame update
     void Start()
     {
@@ -42,103 +42,108 @@ public class CherryCycle : MonoBehaviour
 
         _audioSource = GetComponent<AudioSource>();
             
-        pauseButton.onClick.AddListener(() => onPauseButtonClick());
+        //pauseButton.onClick.AddListener(() => onPauseButtonClick());
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if you click the right arrow
-        if (Input.GetKeyDown(KeyCode.E))
+
+        if (PlayerInside)
         {
-            //get the array of sprite renderes and the number on the list and their color
-            //set to new color where alpha is zero
-            //Debug.Log("key pressed");
-            //_sprites[currentIndex].color = new Color(1f, 1f, 1f, 0f);
-            //Debug.Log("set transparent");
-            
-            Debug.Log("Alpha of: " + _sprites[currentIndex].color);
-            
-            switch (currentIndex)
+            Debug.Log("PlayerinsideCherry");
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                case 0:
-                    _audioSource.clip = audioClips[0];
-                    _audioSource.Play();
-                    break;
-                case 2:
-                    _audioSource.Pause();
-                    _audioSource.clip = audioClips[1];
-                    _audioSource.Play();
-                    break;
-                case 4:
-                    _audioSource.Pause();
-                    _audioSource.clip = audioClips[2];
-                    _audioSource.Play();
-                    break;
-                case 6:
-                    _audioSource.Pause();
-                    _audioSource.clip = audioClips[3];
-                    _audioSource.Play();
-                    break;
-                case 9:
-                    _audioSource.Pause();
-                    _audioSource.clip = audioClips[4];
-                    _audioSource.Play();
-                    break;
-                default:
-                    Debug.Log("DEFAULT");
-                    break;
+                _sprites[currentIndex].color = new Color(1f, 1f, 1f, 0f);
+            
+                Debug.Log("alpha of: " + _sprites[currentIndex].color);
+                switch (currentIndex)
+                {
+                    case 0:
+                        _audioSource.clip = audioClips[0];
+                        _audioSource.Play();
+                        break;
+                    case 2:
+                        _audioSource.Pause();
+                        _audioSource.clip = audioClips[1];
+                        _audioSource.Play();
+                        break;
+                    case 4:
+                        _audioSource.Pause();
+                        _audioSource.clip = audioClips[2];
+                        _audioSource.Play();
+                        break;
+                    case 6:
+                        _audioSource.Pause();
+                        _audioSource.clip = audioClips[3];
+                        _audioSource.Play();
+                        break;
+                    case 9:
+                        _audioSource.Pause();
+                        _audioSource.clip = audioClips[4];
+                        _audioSource.Play();
+                        break;
+                    default:
+                        Debug.Log("DEFAULT");
+                        break;
+                }
+            
+                //storing int variable = (0 + 1)
+                //increments current index by adding 1, wraps around
+                currentIndex = currentIndex + 1;
+
+                //get the array of sprite renderes and the number on the list and their color
+                //set to new color where alpha is one
+                _sprites[currentIndex].color = new Color(1f, 1f, 1f, 1f);
+                Debug.Log("Opaque sprite:" + _sprites[currentIndex].color);
+                //Debug.Log("set opaque");
             }
-            
-            //storing int variable = (0 + 1)
-            //increments current index by adding 1, wraps around
-            currentIndex = currentIndex + 1;
 
-            //get the array of sprite renderes and the number on the list and their color
-            //set to new color where alpha is one
-            _sprites[currentIndex].color = new Color(1f, 1f, 1f, 1f);
-            //Debug.Log("set opaque");
-            
         }
-        
-        
-        if (Input.GetKey(KeyCode.Q))
+
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            TogglePause();
+                TogglePause();
         }
-        
+          
     }
 
-    public void onPauseButtonClick()
+    private void OnTriggerExit(Collider other)
     {
-        //check if audio source is playing and matches buttons assignment
-        if (_audioSource.isPlaying)
+        if (other.CompareTag("Player"))
         {
-            _audioSource.Pause();
+            PlayerInside = false;
+            _audioSource.Stop();
         }
     }
-    
-    //on trigger enter play audio source
-    //button that is active on the texts with sprites
-    //If sprite and this sprite is active
-    //set button active
-    //on button click
-    //pause audio
-    
-    
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            PlayerInside = true;
+        }
+    }
+
     void TogglePause()
-    {
-        if (isPaused)
         {
-            _audioSource.UnPause();
-            isPaused = false;
-            Debug.Log("Audio resumed");
-        }
-        else
-        {
-            _audioSource.Pause();
-            isPaused = true;
-            Debug.Log("Audio paused");
-        }
+            if (isPaused)
+            {
+                _audioSource.UnPause();
+                isPaused = false;
+                 Debug.Log("Audio resumed");
+            }
+            else
+            {
+                _audioSource.Pause();
+                isPaused = true;
+                Debug.Log("Audio paused");
+            }
     }
-}
+        
+    
+        
+    }
+
+
+

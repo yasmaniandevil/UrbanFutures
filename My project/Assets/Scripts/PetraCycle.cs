@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,7 @@ public class PetraCycle : MonoBehaviour
     private int currentIndex = 0;
     //number of objects
     private int numObjects;
+    private bool playerInside = false;
     
     // Start is called before the first frame update
     void Start()
@@ -30,20 +32,25 @@ public class PetraCycle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if e is pressed
-        if (Input.GetKeyDown(KeyCode.E))
+        if (playerInside)
         {
+            Debug.Log("Petra Entered");
+            //if e is pressed
+            if (Input.GetKeyDown(KeyCode.E))
+            {
             
-            //set alpha of currently visible obj to 0
-            SetAlpha(_marinaToCycle[currentIndex], 0f);
-            //Debug.Log("TransparentSpriteNo:" +currentIndex);
-            //index goes up by one
-            currentIndex = (currentIndex + 1) % numObjects;
-            Debug.Log("current index:" + currentIndex);
-            //set alpha of next obj in array to 1
-            SetAlpha(_marinaToCycle[currentIndex], 1f);
-            //Debug.Log("Sprite ON:" +currentIndex);
+                //set alpha of currently visible obj to 0
+                SetAlpha(_marinaToCycle[currentIndex], 0f);
+                //Debug.Log("TransparentSpriteNo:" +currentIndex);
+                //index goes up by one
+                currentIndex = (currentIndex + 1) % numObjects;
+                Debug.Log("current index:" + currentIndex);
+                //set alpha of next obj in array to 1
+                SetAlpha(_marinaToCycle[currentIndex], 1f);
+                //Debug.Log("Sprite ON:" +currentIndex);
+            }
         }
+        
     }
 
     private void SetAlpha(GameObject parent, float alpha)
@@ -81,5 +88,21 @@ public class PetraCycle : MonoBehaviour
             }
         
         //Debug.Log("Alpha of " + parent.name + "is now" + alpha);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInside = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInside = false;
+        }
     }
 }

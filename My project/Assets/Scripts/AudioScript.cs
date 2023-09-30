@@ -15,40 +15,16 @@ public class AudioScript : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-
-        //GameObject.FindWithTag("Player");
-
-
     }
-    /*public static class FadeAudioSource
-    {
-        public static IEnumerator startFade(AudioSource audioSource, float duration, float targetVolume)
-        {
-            float currentTime = 0;
-            float start = audioSource.volume;
-            while (currentTime < duration)
-            {
-                currentTime += Time.deltaTime;
-                audioSource.volume = Mathf.Lerp(start, targetVolume, currentTime / duration);
-                yield return null;
-            }
-            
-            yield break;
-        }
-    }*/
 
-    // Update is called once per frame
+// Update is called once per frame
     void Update()
     {
-        //StartCoroutine(FadeAudioSource.startFade(audioSource, 100, .1f));
-        //Debug.Log("current volume " + audioSource.volume);
-
-
+        
         if (Input.GetKey(KeyCode.Q))
         {
             TogglePause();
         }
-        
         
     }
 
@@ -68,7 +44,7 @@ public class AudioScript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerEntered = false; // Player has exited the trigger area
-            audioSource.Pause();
+            audioSource.Stop();
             Debug.Log("player entered set to false");
             Debug.Log("Player exited the trigger area");
         }
@@ -90,15 +66,6 @@ public class AudioScript : MonoBehaviour
         }
     }
 
-    /*public void PauseButton()
-    {
-        if (audioSource.isPlaying)
-        {
-            audioSource.Pause();
-            Debug.Log("Liad audio paused");
-        }
-    }*/
-    
     void PlayAudioIfPlayerEntered()
     {
         if (playerEntered == true)

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,7 @@ public class FadeGameObject : MonoBehaviour
     private int currentIndex = 0;
     //number of objects
     private int numObjects;
+    private bool PlayerInsideTrigger = false;
     
     // Start is called before the first frame update
     void Start()
@@ -30,19 +32,40 @@ public class FadeGameObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if e is pressed
-        if (Input.GetKeyDown(KeyCode.E))
+        if (PlayerInsideTrigger)
         {
+            Debug.Log("entered fernande");
+            //if e is pressed
+            if (Input.GetKeyDown(KeyCode.E))
+            {
             
-            //set alpha of currently visible obj to 0
-            SetAlpha(_objectsToCycle[currentIndex], 0f);
-            //Debug.Log("TransparentSpriteNo:" +currentIndex);
-            //index goes up by one
-            currentIndex = (currentIndex + 1) % numObjects;
-            //Debug.Log("current index:" + currentIndex);
-            //set alpha of next obj in array to 1
-            SetAlpha(_objectsToCycle[currentIndex], 1f);
-            //Debug.Log("Sprite ON:" +currentIndex);
+                //set alpha of currently visible obj to 0
+                SetAlpha(_objectsToCycle[currentIndex], 0f);
+                //Debug.Log("TransparentSpriteNo:" +currentIndex);
+                //index goes up by one
+                currentIndex = (currentIndex + 1) % numObjects;
+                //Debug.Log("current index:" + currentIndex);
+                //set alpha of next obj in array to 1
+                SetAlpha(_objectsToCycle[currentIndex], 1f);
+                //Debug.Log("Sprite ON:" +currentIndex);
+            }
+        }
+        
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            PlayerInsideTrigger = true;
+        }
+    }
+    
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            PlayerInsideTrigger = false; // Set the flag to indicate the player is inside the trigger area
         }
     }
 
