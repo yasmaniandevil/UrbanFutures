@@ -28,7 +28,7 @@ public class SpawnLocation : MonoBehaviour
         //SceneManager.LoadScene(1);
 
         Vector3 newPos = new Vector3(-23.156f, 7.188f, 17.662f);
-        GameManager._player.GetComponent<ForPlayer>().SetPlayerPosition(new Vector3());
+        //GameManager._player.GetComponent<ForPlayer>().SetPlayerPosition(new Vector3());
         SceneManager.LoadScene(1);
     }
     public void SpawnPointFunctionCherry()
