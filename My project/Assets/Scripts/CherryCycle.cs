@@ -13,7 +13,7 @@ public class CherryCycle : MonoBehaviour
     private static int currentIndex = 0; //current index of sprites set at zero
     private int numSprites; //the number of sprites
     private bool isPaused = false;
-    private bool PlayerInside = false;
+    public  bool PlayerInside = false;
 
     //array of audio clips
     public AudioClip[] audioClips;

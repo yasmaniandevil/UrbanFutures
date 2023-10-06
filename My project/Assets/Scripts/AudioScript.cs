@@ -9,7 +9,7 @@ using TMPro;
 public class AudioScript : MonoBehaviour
 {
     public AudioSource audioSource;
-    private bool playerEntered = false;
+    public bool playerEntered = false;
     private bool isPaused = false;
 
     void Start()
